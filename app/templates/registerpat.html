@@ -37,12 +37,12 @@
           {% endfor %}
         {% endif %}
     {% csrf_token %}
-    <section class="vh-300 gradient-custom">
-      <div class="container mt-0 mx-0 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-            <div class="card bg-dark text-white" style="border-radius: 1rem; width:500px;">
-              <div class="card-body p-5 text-center">
+    <section >
+      <div >
+        <div >
+          <div >
+            <div  style="border-radius: 1rem; width:500px;">
+              <div >
 
                 <div class="mb-md-5 pb-2">
                   <h2 class="fw-bold mb-2 text-uppercase">Register</h2>
@@ -60,11 +60,10 @@
                     <input type="file" name="image" class="form-control">
                   </div>
 
-                  <button class="btn btn-outline-light btn-lg px-5 mt-3" type="submit">Register</button>
+                  <button class="btn " type="submit">Register</button>
                 </div>
                 <div>
-                  <p class="mb-0">Already Registered? <a href="{% url 'login' %}" class="text-white-50 fw-bold"> Login Now</a>
-                  </p>
+
                 </div>
               </div>
             </div>

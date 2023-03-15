@@ -12,22 +12,20 @@
     <link rel="stylesheet" href="/static/CSS/navbarstyles.css">
 </head>
 
-<body id="body-pd">
-    <header class="header" id="header">
-        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i></div>
-    </header>
+<body >
+
 
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
-            <div> <a href="{% url 'blogs' %}" class="nav_link"> <i class='bx bx-home-alt-2'></i> <span class="nav_names">Home Page</span> </a>
+            <div> <a href="{% url 'blogs' %}" class="nav_link">  <span class="nav_names">Home Page</span> </a>
               {% if request.user.is_doctor %}     
               <div class="nav_list"> 
-                  <a href="{% url 'myblogs' %}" class="nav_link"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">View My Blogs</span> </a> 
-                  <a href="{% url 'drafts' %}" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_names">Drafts</span> </a>
-                  <a href="{% url 'create' %}" class="nav_link active"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Create New Blog</span> </a>  
+                  <a href="{% url 'myblogs' %}" class="nav_link"> <span class="nav_name">View My Blogs</span> </a> 
+                  <a href="{% url 'drafts' %}" class="nav_link"> <span class="nav_names">Drafts</span> </a>
+                  <a href="{% url 'create' %}" class="nav_link active">  <span class="nav_name">Create New Blog</span> </a>  
                 </div>
               {% endif %}
-            </div> <a href="{% url 'logout' %}" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Logout</span> </a>
+            </div> <a href="{% url 'logout' %}" class="nav_link">  <span class="nav_name">Logout</span> </a>
         </nav>
     </div>
 
@@ -42,13 +40,13 @@
     {% endif %}
 
     <div class="container mx-3">
-        <form action="" method="post" novalidate class="shadow p-5 mx-0" enctype="multipart/form-data">
+        <form action="" method="post" novalidate  enctype="multipart/form-data">
     {% csrf_token %}
-    <section class="vh-300 gradient-custom">
-      <div class="container mt-0 mx-0 h-100">
+    <section >
+      <div >
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-            <div class="card bg-dark text-white" style="border-radius: 1rem; width:500px;">
+            <div style="border-radius: 1rem; width:500px;">
               <div class="card-body p-5 text-center">
 
                 <div class="mb-md-5 pb-2">
