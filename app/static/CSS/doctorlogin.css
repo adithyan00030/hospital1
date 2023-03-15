@@ -69,15 +69,14 @@ img {
 
 .card {
   display: flex;
-  flex-direction: column;
-  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  flex-direction: row;
+
   overflow: hidden;
-  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
-  border-radius: 1em;
+
+ 
   background: #ECE9E6;
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-    margin-top:20px ;
-    margin-bottom:40px ;
+
+   
 }
 
 

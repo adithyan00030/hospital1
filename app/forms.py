@@ -4,24 +4,25 @@ from .models import User, Blog
 
 
 class UserRegister(UserCreationForm):
-    first_name = forms.CharField(
-        label='First name: ', widget=forms.TextInput(attrs={'class': 'form-control'}))
-    last_name = forms.CharField(
-        label='Last name: ', widget=forms.TextInput(attrs={'class': 'form-control'}))
-    username = forms.CharField(
-        label='Username: ', widget=forms.TextInput(attrs={'class': 'form-control'}))
-    email = forms.CharField(required=True, label='Email: ', widget=forms.EmailInput(
-        attrs={'class': 'form-control'}))
-    password1 = forms.CharField(label='Create Password: ', widget=forms.PasswordInput(
-        attrs={'class': 'form-control'}))
-    password2 = forms.CharField(label='Confirm Password: ', widget=forms.PasswordInput(
-        attrs={'class': 'form-control'}))
-    Address = forms.CharField(label='Address: ', widget=forms.TextInput(
-        attrs={'class': 'form-control'}))
-    City = forms.CharField(label='City: ', widget=forms.TextInput(
-        attrs={'class': 'form-control'}))
-    Pincode = forms.IntegerField(label='Pincode: ', widget=forms.NumberInput(
-        attrs={'class': 'form-control'}))
+    pass
+    # first_name = forms.CharField(
+    #     label='First name: ', widget=forms.TextInput(attrs={'class': 'form-control'}))
+    # last_name = forms.CharField(
+    #     label='Last name: ', widget=forms.TextInput(attrs={'class': 'form-control'}))
+    # username = forms.CharField(
+    #     label='Username: ', widget=forms.TextInput(attrs={'class': 'form-control'}))
+    # email = forms.CharField(required=True, label='Email: ', widget=forms.EmailInput(
+    #     attrs={'class': 'form-control'}))
+    # password1 = forms.CharField(label='Create Password: ', widget=forms.PasswordInput(
+    #     attrs={'class': 'form-control'}))
+    # password2 = forms.CharField(label='Confirm Password: ', widget=forms.PasswordInput(
+    #     attrs={'class': 'form-control'}))
+    # Address = forms.CharField(label='Address: ', widget=forms.TextInput(
+    #     attrs={'class': 'form-control'}))
+    # City = forms.CharField(label='City: ', widget=forms.TextInput(
+    #     attrs={'class': 'form-control'}))
+    # Pincode = forms.IntegerField(label='Pincode: ', widget=forms.NumberInput(
+    #     attrs={'class': 'form-control'}))
 
     class Meta:
         model = User
